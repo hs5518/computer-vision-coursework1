@@ -108,11 +108,11 @@ colorbar
 %converse the image from the disparity map to the unscaled map.
 
 
-disparityRange=[0 0.25];
+disparityRange=[0 0.25*2935.45*0.01];
 
 
 
-IDSP = (1./disparityMap);
+IDSP = (1./disparityMap)*2935.45*0.01;
 
 
 figure;
@@ -124,7 +124,7 @@ colorbar
 
 truesize;
 
-
+ 
 %------------------------------------------------------------------
 
 
